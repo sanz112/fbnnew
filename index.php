@@ -1,7 +1,4 @@
 
-
-
-<<<<<<< HEAD
 <?php 
 include 'header.php';
 ?>
@@ -45,9 +42,13 @@ include 'header.php';
 body {
   background-color: #f1f1f1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   #regForm {
     width: 100%;
+  }
+  #mtBtn {
+    display: block;
+    padding: 10px;
   }
 }
 
@@ -57,7 +58,7 @@ body {
   margin: 100px auto;
   font-family: Raleway;
   padding: 40px;
-  width: 80%;
+  width: 100%;
   min-width: 300px;
 }
 
@@ -134,9 +135,9 @@ position: fixed;
 </style>
 
 <form id="regForm">
-  <button class="btn-md btn-primary p-3">Corporate Account</button>
-  <button class="btn-md btn-primary p-3">FBN Mortgage</button>
-  <button class="btn-md btn-primary p-3">Individual Account</button>
+  <button id="myBtn" class="btn-md btn-primary p-3">Corporate Account</button>
+  <button  id="myBtn" class="btn-md btn-primary p-3">FBN Mortgage</button>
+  <button  id="myBtn" class="btn-md btn-primary p-3">Individual Account</button>
   <!-- One "tab" for each step in the form: -->
   <div class="tab">
   <iframe style="overflow: none; border: none;" frameborder="0" src="FM.php"></iframe>
