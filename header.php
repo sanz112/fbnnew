@@ -27,7 +27,7 @@
     </div>
 
     <!-- Main header -->
-    <nav class="navbar animated slideInDown navbar-expand-lg navbar-dark bg-blue sticky-top">
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-blue sticky-top">
 
         <div class="container py-3">
         <a class="navbar-brand" href="index.php">
