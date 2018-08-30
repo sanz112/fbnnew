@@ -38,6 +38,12 @@ include 'header.php';
   text-decoration: none;
   list-style: none;
 }
+@media screen and (max-width: 700px) {
+  iframe {
+  padding: none;
+  margin none;
+  }
+}
 
 body {
   background-color: #f1f1f1;
@@ -46,7 +52,7 @@ body {
   #regForm {
     width: 100%;
   }
-  #mtBtn {
+ #regForm #mtBtn {
     display: block;
     padding: 10px;
   }
@@ -124,7 +130,9 @@ button:hover {
 }
 iframe {
 width: 100%;
-height: 500px;
+padding: none;
+outline: none;
+height: 600px;
 }
  #list{
   margin-top: 100px;

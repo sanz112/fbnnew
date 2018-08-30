@@ -1,218 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha382-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg2Va+PmSTsz/K68vbdEjh2u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha382-rHyoN1iRsVXV2nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<link href="fbn.css" type="text/css" rel="stylesheet">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha382-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<title>Document</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div class="main">
-                <nav  class="navbar navbar-inverse navbar-fixed-top">
-                    <div class="container-fluid">
-                      <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span> 
-                        </button>
-                        <a class="navbar-brand" href="#">FBN Mortgage</a>
-                      </div>
-                      <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                          <li><a class="active" href="FM.html">Home</a></li>
-                          <li><a href="#page1">Page 1</a></li> 
-                          <li><a href="#page2">Page 2</a></li> 
-                          <li><a href="#page3">Page 3</a></li> 
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
-                  <section>
-<form class="form-inline" method="POST" enctype="multipart/form-data">
-    <div style="margin: 20px 0 0 0;" class="col-sm-12 col-lg-12">
-            <div  class="form-group col-lg-offset-10">
-            <input style=" background: #fff; width: 100px; height: 1000x; outline: 2px solid #ccc; padding: 50px 5px;" type= "file" value="upload passport">
-            <p style="color: blue;">Upload Passport</p>
-            </div>
-            </div>
-            <h3 class="text-center" style=" padding: 5px;">HOME OWNERSHIP OF MORTGAGE LOAD APLLICATION FORM </h3>
-            <strong id="page1" style="background: blue; padding: 5px; color: #fff">SECTION A: PARTICULARS OF BORROWER: </strong><br><br>
-<div class="form-group col-lg-6 col-md-6">
-<label for="n">Name</label>
-<input style="width: 100%;" type="text" class="form-control" id="n">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="fn">FirstName:</label>
-<input style="width: 100%;" type="text" class="form-control" id="fn">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="ln">LastName:</label>
-<input style="width: 100%;" type="text" class="form-control" id="ln">
-</div><br />
-<div class="form-group col-lg-6 col-md-6">
-<label for="txt">Address</label>
-<textarea style="width: 100%;" id="txt" class="form-control" rows="5"></textarea>
-</div> 
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Phone Number:</label>
-<span class="form-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-<input style="width: 100%;" id="phn" type="number" class="form-control" name="phn" placeholder="PhoneNumber">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="ln">Date Of Birth:</label>
-<input style="width: 100%;" type="date" class="form-control" id="ln" placeholder="DOB">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="slct">Sex</label>
-<select style="width: 100%;" id="slct" class="form-control">
+<style>
+body{font-family:'Open Sans',serif;padding-top:54px;color:#868e96}@media (min-width:900px){body{padding-top:0;padding-left:17rem}}h1,h2,h3,h4,h5,h6{font-family:'Saira Extra Condensed',serif;font-weight:700;text-transform:uppercase;color:#343a40}h1{font-size:6rem;line-height:5.5rem}h2{font-size:3.5rem}.subheading{text-transform:uppercase;font-weight:500;font-family:'Saira Extra Condensed',serif;font-size:1.35rem}.list-social-icons a{color:#495057}.list-social-icons a:hover{color:#bd5d38}.list-social-icons a .fa-lg{font-size:1.75rem}.list-icons{font-size:3rem}.list-icons .list-inline-item i:hover{color:#bd5d38}#sideNav .navbar-nav .nav-item .nav-link{font-weight:600;text-transform:uppercase}@media (min-width:900px){#sideNav{text-align:center;position:fixed;top:0;left:0;display:flex;flex-direction:column;width:10rem;height:100vh}#sideNav .navbar-brand{display:flex;margin:auto auto 0;padding:.5rem}#sideNav .navbar-brand .img-profile{max-width:10rem;max-height:10rem;border:.5rem solid rgba(255,255,255,.2)}#sideNav #navbarcollapse{display:flex;align-items:flex-start;flex-grow:0;width:100%;margin-bottom:auto}#sideNav #navbarcollapse .navbar-nav{flex-direction:column;width:100%}#sideNav #navbarcollapse .navbar-nav .nav-item{display:block}#sideNav #navbarcollapse .navbar-nav .nav-item .nav-link{display:block}}section.resume-section{border-bottom:1px solid #dee2e6;padding-top:5rem!important;padding-bottom:5rem!important}section.resume-section .resume-item .resume-date{min-width:none}.bg-primary{background-color:#47559b!important}.text-primary{color:#bd5d38!important}a{color:#bd5d38}a:active,a:focus,a:hover{color:#824027} #navbarcollapse .navbar-nav .nav-item .nav-link{display: inline;  padding-right: 50px; } #navbarcollapse .navbar-nav{flex-direction:row;width:100%} #navbarcollapse .navbar-nav .nav-item{display:inline-block}
+#navbarcollapse{display:flex;align-items:flex-start;flex-grow:3;width:100%;margin-bottom:auto}
+</style>
+<nav class='navbar navbar-expand-lg navbar-dark bg-primary fixed-top' id='sideNav'>
+      <a class='navbar-brand js-scroll-trigger' href='#page-top'>
+        
+      </a>
+     
+      <div class='' id='navbarcollapse'>
+        <ul class='navbar-nav'>
+        
+          <li class='nav-item'>
+            <a class='nav-link js-scroll-trigger' href='#about'>1</a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link js-scroll-trigger' href='#experience'>2</a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link js-scroll-trigger' href='#education'>3</a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link js-scroll-trigger' href='#skills'>4</a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link js-scroll-trigger' href='#interests'>5</a>
+          </li>
+          <!--<li class='nav-item'>
+            <a class='nav-link js-scroll-trigger' href='#awards'>Awards</a>
+          </li>-->
+        </ul>
+      </div>
+    </nav>
+                  <div class="container">
+  <h2>Inline form</h2>
+  <p>Make the viewport larger than 576px wide to see that all of the form elements are inline and left-aligned. On small screens, the form groups will stack horizontally.</p>
+  <form class="form-inline" role="form">
+  <div class="form-check mb-2 mr-sm-2 ">
+    <label for="email2" class="mb-2 mr-sm-2">Name:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="pwd2" class="mb-2 mr-sm-2">FirstName:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="pwd2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="email2" class="mb-2 mr-sm-2">LastName:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="pwd2" class="mb-2 mr-sm-2">Address: </label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="pwd2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="email2" class="mb-2 mr-sm-2">Phone Number:</label>
+    <input type="number" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="pwd2" class="mb-2 mr-sm-2">Date Of Birth:</label>
+    <input type="date" class="form-control mb-2 mr-sm-2" id="pwd2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="pwd2" class="mb-2 mr-sm-2">Sex: </label>
+    <select class="form-control">
 <option value="Male">Male</option>
 <option value="Male">Female</option>
 <option value="Male">Prefer Not to Say</option>
 </select>
 </div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="ln">Highest Educational Qualification</label>
-<input style="width: 100%;" type="text" class="form-control" id="ln" placeholder="">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="ln">Profession</label>
-<input style="width: 100%;" type="text" class="form-control" id="ln" placeholder="">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="txt">Name/Address of Employer(if less than three years, give name of previous employer</label>
-<textarea style="width: 100%;" id="txt" class="form-control" rows="5"></textarea>
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="ln">Present Position</label>
-<input style="width: 100%;" type="text" class="form-control" id="ln" placeholder="">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Telephone Number:</label>
-<span class="form-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-<input style="width: 100%;" id="phn" type="number" class="form-control" name="phn" placeholder="PhoneNumber">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn"> Mobile Phone Number:</label>
-<span class="form-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-<input style="width: 100%;" id="phn" type="number" class="form-control" name="phn" placeholder="PhoneNumber">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Fax</label>
-<span class="form-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-<input style="width: 100%;" id="phn" type="number" class="form-control" name="phn" placeholder="PhoneNumber">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">E-mail</label>
-
-<input style="width: 100%;" id="em" type="email" class="form-control" name="phn" placeholder="PhoneNumber">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Years at current Employment</label>
-
-<input style="width: 100%;" id="em" type="number" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Number of Years to Retirement</label>
-
-<input style="width: 100%;" id="em" type="number" class="form-control" name="phn" >
-</div>
-
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Years at current Employment</label>
-
-<input style="width: 100%;" id="em" type="number" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="txt">Resedential Address</label>
-<textarea style="width: 100%;" id="txt" class="form-control" rows="5"></textarea>
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Telephone Number</label>
-
-<input style="width: 100%;" id="em" type="number" class="form-control" name="phn" >
-</div><br><br>
-
-<div style="margin: 10px 0;" class="form-group col-sm-12">  
-<strong><p style="float: left;" for="phn">Type:</p></strong><br><br>
-
-<div class="checkbox col-sm-4">
-    <label><input type="checkbox" value="">Owned</label>
-  </div>
-<div class="checkbox col-sm-4">
-    <label><input type="checkbox" value="">Rented</label>
-  </div>
-  <div class="checkbox col-sm-4">
-    <label><input type="checkbox" value="">others</label>
-  </div>
-</div>
-<hr>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Specify</label>
-
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Annual Rent</label>
-
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" >
-</div>
-<hr>
-<div style="margin: 10px 0;" class="form-group col-sm-12">  
-        <strong><p style="float: left;" for="phn">Marital Status</p></strong><br><br>
-        
-        <div class="checkbox col-sm-4">
-            <label><input type="checkbox" value="">Married</label>
-          </div>
-        <div class="checkbox col-sm-4">
-            <label><input type="checkbox" value="">Single</label>
-          </div>
-          <div class="checkbox col-sm-4">
-            <label><input type="checkbox" value="">Divorced/Seperated</label>
-          </div>
-        </div>
-<hr>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Name of Spouse</label>
-
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="txt"> Address</label>
-<textarea style="width: 100%;" id="txt" class="form-control" rows="5"></textarea>
-
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn"> Spouse's Employer</label>
-
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Number of Years Employed</label>
-
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn">Profesion of Spouse</label>
-
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="phn"> Spouse Annual Income</label>
-
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" >
-</div>
-
-<div style="padding: 20px;" class="table-responsive">          
+<div class="form-check mb-2 mr-sm-2 ">
+    <label for="email2" class="mb-2 mr-sm-2">Highest Educational Qualification:</label>
+    <input type="number" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="pwd2" class="mb-2 mr-sm-2">Profession:</label>
+    <input type="date" class="form-control mb-2 mr-sm-2" id="pwd2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="email2" class="mb-2 mr-sm-2">Name/Address of Employer(if less than three years, give name of previous employer:</label>
+    <input type="number" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="pwd2" class="mb-2 mr-sm-2">Present Position:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="email2" class="mb-2 mr-sm-2">Highest Educational Qualification:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="pwd2" class="mb-2 mr-sm-2">Telephone Number:</label>
+    <input type="number" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="email2" class="mb-2 mr-sm-2">Mobile Phone Number:</label>
+    <input type="number" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="pwd2" class="mb-2 mr-sm-2">Profession:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="email2" class="mb-2 mr-sm-2">Fax:</label>
+    <input type="number" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="pwd2" class="mb-2 mr-sm-2">E-mail:</label>
+    <input type="email" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="email2" class="mb-2 mr-sm-2">Years at current Employment:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="pwd2" class="mb-2 mr-sm-2">Residential Address:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="pwd2" class="mb-2 mr-sm-2">Telephone Number:</label>
+    <input type="number" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    
+    <div class="col-12 pt-2 mb-2"> Type </div>
+    <div class="row col-12">
+    <div class="form-check mb-2 mr-sm-2 ">
+      <label class="form-check-label ">
+        <input class="form-check-input "type="checkbox"> Owned
+      </label>
+    </div> 
+    <div class="form-check mb-2 mr-sm-2 ">
+      <label class="form-check-label">
+        <input class="form-check-input "type="checkbox"> Rented
+      </label>
+    </div> 
+    <div class="form-check mb-2 mr-sm-2 ">
+      <label class="form-check-label">
+        <input class="form-check-input "type="checkbox">others
+      </label>
+    </div> 
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="pwd2" class="mb-2 mr-sm-2">Specify:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mb-2 mr-sm-2 ">
+    <label for="pwd2" class="mb-2 mr-sm-2">Annual Rent:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    
+    <div class="col-12 pt-4 mb-2">Marital Status:</div>
+    <div class="row col-12">
+    <div class="form-check mb-2 mr-sm-2 ">
+      <label class="form-check-label">
+        <input class="form-check-input "type="checkbox"> Married
+      </label>
+    </div> 
+    <div class="form-check mb-2 mr-sm-2 ">
+      <label class="form-check-label">
+        <input class="form-check-input "type="checkbox"> Single
+      </label>
+    </div> 
+    <div class="form-check mb-2 mr-sm-2 ">
+      <label class="form-check-label">
+        <input class="form-check-input "type="checkbox">Divorced/Seperated
+      </label>
+    </div> 
+    </div>
+    
+    <div class=" form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Name of Spouse:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Annual Rent:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2"> Address:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Spouse's Employer:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Number of Years Employed:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Profession of Spouse:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Spouse Annual Income:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+<div class="table-responsive">          
 <table class="table table-bordered">
 <thead>
 <tr>
@@ -257,45 +251,30 @@
 </tbody>
 </table>
 </div>
-<h3 for="n">Next-of-Kin</h3>
-<div class="form-group col-lg-6">
-<label for="n">Name</label>
-<input style="width: 100%;" type="text" class="form-control" id="n">
-</div>
-<div class="form-group col-lg-6">
-<label for="fn">Relationship:</label>
-<input style="width: 100%;" type="text" class="form-control" id="fn">
-</div>
-<div class="form-group col-lg-12">
-<label for="ln">Age:</label>
-<input style="width: 100%;" style="margin: 10px 0; width: 100%;" type="number" class="form-control" id="ln">
-</div><br>
-<div style="margin: 10px 0; resize: none; width: 100%;" class="form-group">
-<label for="ln">Address:</label>
-<textarea rows="10" style="margin: 10px 0; resize: none; width: 100%;" type="text" class="form-control" id="ln"></textarea>
-</div>
-<br>
-<strong id="page2" style="background: blue; padding: 5px; color: #fff">SECTION B. PERSONAL FINALCIAL INFORMATION </strong><br><br>
-<div class="form-group">
-<label for="n">Employment Income</label> <br>
-<div class="form-group col-lg-6 col-md-6">
-<label for="n">Total Annual Pay:</label>
-<input style="width: 100%;" type="text" class="form-control" id="n">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="fn">Monthly Gross Pay</label>
-<input style="width: 100%;" type="text" class="form-control" id="fn">
-</div>
-<div class="form-group col-lg-6 col-md-6">
-<label for="ln">Monthly Net Pay:</label>
-<input style="width: 100%;" type="text" class="form-control" id="ln">
-</div>
-
-</div>
-<div>
-<div style="padding: 20px;">
-<p> Other Periodic Pay ffrom employment:</p>
-<div class="table-responsive">          
+<div class="col-12 mb-2 p-3">Next-of-Kin:</div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Name:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Age:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Address:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="col-12 mb-2 p-3">Employment Income</div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Total Annual Pay:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Monthly Gross Pay:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div style="font-weight: 700;" class="col-12 pt-4 mb-3">Other Periodic Pay from employment:</div>
+    <div class="table-responsive">          
 <table class="table table-bordered">
 <thead>
 <tr>
@@ -346,10 +325,9 @@
 </tbody>
 </table>
 </div>
-</div>
-<div style="padding: 20px;">
-<p> Other Source(s) of Income</p>
-<div  class="table-responsive">          
+
+<div style="style="font-weight: 700" class="col-12 pt-4 pd-3 mb-3">Other Source(s) of Income</div>
+<div  class="table-responsive">
 <table class="table table-bordered">
 <thead>
 <tr>
@@ -388,9 +366,7 @@
 </tbody>
 </table>
 </div>
-</div>
-<div style="padding: 20px;">
-<p> Assets/ Investments Owed <i>(Real Estate, Equities, Bonds, Vehicles, etc):</i></p>
+<div style="font-weight: 700;" class="col-12 mb-3 pt-4"> Assets/ Investments Owed <i>(Real Estate, Equities, Bonds, Vehicles, etc):</i></div>
 <div  class="table-responsive">          
 <table class="table table-bordered">
 <thead>
@@ -441,9 +417,8 @@
 </tbody>
 </table>
 </div>
-</div>
-<div style="padding: 20px;">
-<p> Existing Obligations/Liabilities <i>(off payroll only)</i></p>
+
+<div class="col-12 mb-3 p-4" style="font-weight: 700;"> Existing Obligations/Liabilities <em>(off payroll only)</em></div>
 <div class="table-responsive">          
 <table class="table table-bordered">
 <thead>
@@ -496,7 +471,7 @@
 <tr>
 <td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
 <td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
-<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea>></td>
+<td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
 <td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
 <td><textarea name="" id="" style="outline: none; border: none; width: 100%;resize: none;" rows="1"></textarea></td>
 
@@ -514,9 +489,7 @@
 </tbody>
 </table>
 </div>
-</div>
-<div style="padding: 20px;">
-<p> Banking Details (Account Information) </p>
+<div class="col-12 mb-3 p-4" style="font-weight: 700;"> Banking Details (Account Information) </div>
 <div class="table-responsive">          
 <table class="table table-bordered">
 <thead>
@@ -586,39 +559,33 @@
 </tbody>
 </table>
 </div>
-</div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Estimated Monthly Living Expenses:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div style="font-weight: 700;" class="col-12 p-4 mb-3"> SECTION C. PARTICULARS OF THE LOAN: </div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Total Financing Required:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Proposed Equity Contribution:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Loan Amount Required:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Tenor of Facility:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
+    <div class="form-check mr-sm-2">
+    <label for="pwd2" class="mb-2 mr-sm-2">Frequency of installment Repayment:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="">
+    </div>
 
-<div class="form-group col-lg-12">
-<label for="phn">Estimated Monthly Living Expenses </label>
-<input style="width: 100%;" id="em" type="amount" class="form-control" name="phn" >
-</div
-<br>
-<hr> 
-<section>
-<strong style="background: blue; padding: 5px; color: #fff"> SECTION C. PARTICULARS OF THE LOAN: </strong><br><br>
-<div class="form-group col-lg-6">
-<label for="phn">Total Financing Required </label>
-<input style="width: 100%;" id="em" type="amount" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6">
-<label for="phn">Proposed Equity Contribution </label>
-<input style="width: 100%;" id="em" type="amount" class="form-control" name="phn" >
-</div>
-<div class="form-group col-lg-6">
-<label for="phn">Loan Amount Required </label>
-<input style="width: 100%;" id="em" type="amount" class="form-control" name="phn" >
-</div> 
-<div class="form-group col-lg-6">
-<label for="phn">Tenor of Facility</label>
-<input style="width: 100%;" id="em" type="amount" class="form-control" name="phn" >
-</div> 
-<div class="form-group col-lg-12">
-<label for="phn">Frequency of installment Repayment </label>
-<input style="width: 100%;"  id="em" type="amount" class="form-control" name="phn" >
-</div> 
-<br><br>
-<div style="padding: 20px;">
-<p> Proposes Security for the Loan </p>
+    <div class="col-12 p-4 mb-3" style="font-weight: 700;"> Proposes Security for the Loan </div>
 <div class="table-responsive">          
 <table class="table table-bordered">
 <thead>
@@ -664,38 +631,26 @@
 </tbody>
 </table>
 </div>
-</div>
-<div style="margin: 10px 0;" class="form-group col-sm-12">  
-        <div class="checkbox col-sm-6">
-            <label><input type="checkbox" value="">Guarantee of Employer</label>
-          </div>
-          <div class="checkbox col-sm-6">
-          <label><input type="checkbox" value="">Other Guarantee</label>
-          <input style="width: 100%;" id="em" type="text" class="form-control" placeholder="Specify" name="phn">
-           </div>
-        </div>
+    <div class="row col-12">
+    <div class="form-check mb-3 mr-sm-2">
+      <label class="form-check-label">
+        <input class="form-check-input "type="checkbox"> Guarantee of Employer
+      </label>
+    </div> 
+    <div class="form-check mb-3 mr-sm-2">
+      <label class="form-check-label">
+        <input class="form-check-input "type="checkbox"> Other Guarantee
+      </label>
+    </div>
+    </div>
+    <div class="col-12 p-5 mb-3"><p style="font-weight: 700;"> SECTION E. APPLICANT'S DECLARATION </p><br>
+    <p style="text-indent: 30px font-style: oblique;"> I hereby declare that all information provided in this application are correct and that all documents submitted with this form are authetic. I agree that FBN mortgages could cross-check thae information provided above and may request for references from my employer and/or financial 
+    institutions mentioned above. I therefore agree that any material misstatement discovered renders my application null and void.</p>
+    </div>
+    <div class="col-12 p-3 mb-3"><p>CHECKLIST OF REQUREMENT</p><br>
+    <u> MORTGAGE LOAN </u></div>
 
-</section> 
-<br>
-<hr>
-<section>
-<strong id="page3" style="background: blue; padding: 5px; color: #fff"> SECTION E. APPLICANT'S DECLARATION </strong><br><br>
-<p style="text-indent: 20px"> I hereby declare that all information provided in this application are correct and that all documents submitted with this form are authetic. I agree that FBN mortgages could cross-check thae information provided above and may request for references from my employer and/or financial institutions mentioned above. I therefore agree that any material misstatement discovered renders my application null and void.</p><br >
-<div class="form-group col-lg-6">
-<label for="dt">Full Name</label>
-<input style="width: 100%;" id="em" type="text" class="form-control" name="phn" placeholder="Full Name" >
-</div> 
-
-<div class="form-group col-lg-6">
-<label for="dt">Date</label>
-<input style="width: 100%;" id="em" type="date" class="form-control" name="phn" placeholder="Date" >
-</div> 
-</section>
-<br><hr>
-<section>
-<strong>CHECKLIST OF REQUREMENT</strong>
-<div style="padding: 20px;">
-<u> MORTGAGE LOAN </u>
+    
 <div class="table-responsive">          
 <table class="table table-bordered">
 <thead>
@@ -802,14 +757,18 @@
 </tbody>
 </table>
 </div>
-</div>
-</section>
-<section>
+
     <footer>
         <p style="text-align: center;"> Copyright &copy; 2018. Do not Use without Approval. All rights reserved. A product of <a href="#">Witt Technologies</a></p>
     </footer>
-</section>
-</form>
 
+    <div class="form-check mb-3 mr-sm-2">
+      <label class="form-check-label">
+        <input class="form-check-input "type="checkbox"> Remember me
+      </label>
+    </div>
+  
+ </form>
+ </div>
 </body>
 </html>
