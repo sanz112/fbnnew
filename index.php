@@ -38,12 +38,7 @@ include 'header.php';
   text-decoration: none;
   list-style: none;
 }
-@media screen and (max-width: 700px) {
-  iframe {
-  padding: none;
-  margin none;
-  }
-}
+
 
 body {
   background-color: #f1f1f1;
@@ -52,7 +47,7 @@ body {
   #regForm {
     width: 100%;
   }
- #regForm #mtBtn {
+ #regForm #myBtn {
     display: block;
     padding: 10px;
   }
@@ -65,7 +60,7 @@ body {
   font-family: Raleway;
   padding: 40px;
   width: 100%;
-  min-width: 300px;
+  min-width: 200px;
 }
 
 h1 {
@@ -143,9 +138,12 @@ position: fixed;
 </style>
 
 <form id="regForm">
-  <button id="myBtn" class="btn-md btn-primary p-3">Corporate Account</button>
-  <button  id="myBtn" class="btn-md btn-primary p-3">FBN Mortgage</button>
-  <button  id="myBtn" class="btn-md btn-primary p-3">Individual Account</button>
+<div class="row col-12">
+<a class="pt-2" href="FM.php"><button  id="myBtn" class="btn-md btn-primary p-3">FBN Mortgage</button></a>
+  <a class="pt-2" href="CA.php"><button id="myBtn" class="btn-md btn-primary p-3">Corporate Account</button></a>
+  <a class="pt-2" href="IA.php"><button  id="myBtn" class="btn-md btn-primary p-3">Individual Account</button></a>
+  <p>click here to view the full form</p>
+  </div>  
   <!-- One "tab" for each step in the form: -->
   <div class="tab">
   <iframe style="overflow: none; border: none;" frameborder="0" src="FM.php"></iframe>
