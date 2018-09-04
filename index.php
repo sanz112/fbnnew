@@ -136,12 +136,14 @@ position: fixed;
 </style>
 
 <form id="regForm">
+<div class="mb-2" style="vertical-align: middle;">Click the any of the button below to view the full form</div>
+   
 <div class="row col-12">
-<a class="pt-2" href="FM.php"><button  id="myBtn" class="btn-md btn-primary p-3">FBN Mortgage</button></a>
-  <a class="pt-2" href="CA.php"><button id="myBtn" class="btn-md btn-primary p-3">Corporate Account</button></a>
-  <a class="pt-2" href="IA.php"><button  id="myBtn" class="btn-md btn-primary p-3">Individual Account</button></a>
-  <p>click here to view the full form</p>
-  </div>  
+<button  id="myBtn" class="btn-md btn-primary p-3"><a style="color: #fff; padding-right: 10px;" href="FM.php">FBN Mortgage</button></a>
+  <button id="myBtn" class="btn-md btn-primary p-3"><a  style="color: #fff; padding-right: 10px;" href="CA.php">Corporate Account</button></a>
+ <button  id="myBtn" class="btn-md btn-primary p-3"><a  style="color: #fff; padding-right: 10px;" href="IA.php">Individual Account</button></a>
+   </div> 
+
   <!-- One "tab" for each step in the form: -->
   <div class="tab">
   <iframe style="overflow: none; border: none;" frameborder="0" src="FM.php"></iframe>
@@ -155,9 +157,9 @@ position: fixed;
     <iframe style="overflow: none; border: none;" src="IA.php" frameborder="0" ></iframe>
   </div>
   <div style="overflow:auto;">
-    <div>
-      <button class="col-sm-offset-2 col-sm-5" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-      <button class="col-sm-5" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    <div class="col-lg-offset-4">
+      <button class="col-sm-5" type="button" id="prevBtn" onclick="nextPrev(-1)">Move to the Previous Form</button>
+      <button class="col-sm-5" type="button" id="nextBtn" onclick="nextPrev(1)">Move to the Next Form</button>
     </div>
   </div>
   <!-- Circles which indicates the steps of the form: -->
@@ -185,7 +187,7 @@ function showTab(n) {
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
   } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").innerHTML = "Move to the Next Form";
   }
   //... and run a function that will display the correct step indicator:
   fixStepIndicator(n)
@@ -222,7 +224,7 @@ function validateForm() {
       // add an "invalid" class to the field:
       y[i].className += " invalid";
       // and set the current valid status to false
-      valid = false;
+      valid = true;
     }
   }
   // If the valid status is true, mark the step as finished and valid:
